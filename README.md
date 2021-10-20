@@ -25,3 +25,6 @@ cd bin
 ```
 ./delete_kong.sh
 ```
+
+## Environment
+Once the environment is up and running, both Kong Manager and the Admin API can be accessed on localhost for testing.
