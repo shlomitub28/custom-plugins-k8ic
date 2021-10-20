@@ -16,7 +16,7 @@ docker pull kong/kong-gateway:2.5.1.0-alpine
 ```
 docker build -t kong/sales-engineering:custom-kong-1.0 .
 ```
-- Run setup_kong.sh to run kong in k8s
+- Run setup_kong.sh to deploy and run kong
 ```
 cd bin
 ./setup_kong.sh
