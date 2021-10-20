@@ -27,4 +27,7 @@ cd bin
 ```
 
 ## Environment
-Once the environment is up and running, both Kong Manager and the Admin API can be accessed on localhost for testing.
+- Once the environment is up and running, both Kong Manager and the Admin API can be accessed on localhost for testing.
+- The base configuration has a few plugins added: js-hello, py-hello and go-hello. This can be verfied via Kong Manager or the Admin API:
+![manager](https://user-images.githubusercontent.com/11033758/138120585-5bb30567-abaa-48e6-916c-64c8daedd9ff.png)
+![adminapi](https://user-images.githubusercontent.com/11033758/138120631-c8294e8f-6498-4536-a734-02f69811691b.png)
