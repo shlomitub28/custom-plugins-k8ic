@@ -25,7 +25,7 @@ kubectl create secret generic kong-enterprise-license --from-file=./license -n $
 echo "Deploying Kong EE..."
 pushd ../deploy
 helm install $RELEASE kong/kong \
---values kong-ee/values.yaml -n $NAMESPACE \
+--values values.yaml -n $NAMESPACE \
 --set ingressController.installCRDs=false
 
 popd

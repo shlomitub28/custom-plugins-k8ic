@@ -33,7 +33,7 @@ env:
   lua_package_path: /opt/?/migrations/?.lua;/opt/?.lua;/opt/?/init.lua;;
   event_hooks_enabled: "on"
 
-  pluginserver_names: js
+  pluginserver_names: js,python,go-hello
   pluginserver_js_socket: /usr/local/kong/js_pluginserver.sock
   pluginserver_js_start_cmd: /kong-js-pdk/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk/plugins
   pluginserver_js_query_cmd: /kong-js-pdk/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk/plugins --dump-all-plugins

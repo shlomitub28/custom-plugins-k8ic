@@ -1,8 +1,8 @@
-FROM kong/kong-gateway:2.5-alpine
+FROM kong/kong-gateway:2.5.1.0-alpine
 
 USER root
 
-RUN apk update && apk add nodejs npm python3 python3-dev go make g++
+RUN apk update && apk add nodejs npm python3 python3-dev py3-pip go make g++
 
 # Install kong js pdk
 WORKDIR /kong-js-pdk
