@@ -2,7 +2,8 @@
 Init repo for setting up custom plugins in Javascript, Go and Python.
 
 ## Quickstart
-- This project is using helm to deploy kong in kubernetes. I typically run locally in my docker-desktop context.
+- Only tested to work with Docker Desktop k8s
+- This project is using helm to deploy kong in kubernetes
 - Make sure you deploy a Kong Enterprise **license** in the /bin directory
 - Ensure you have the latest Kong helm chart
 ```
