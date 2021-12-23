@@ -1,13 +1,14 @@
-FROM kong/kong-gateway:2.5.1.0-alpine
+FROM kong/kong-gateway:2.7.0.0-alpine
 
 USER root
 
-RUN apk update && apk add nodejs npm python3 python3-dev py3-pip go make g++
+RUN apk update && apk add nodejs npm go python3 py3-pip python3-dev musl-dev libffi-dev gcc g++ file make \
+&& npm install -g kong-pdk && PYTHONWARNINGS=ignore pip3 install kong-pdk
 
 # Install kong js pdk
 WORKDIR /kong-js-pdk
 
-COPY /kong-js-pdk .
+COPY /kong-js-pdk/plugins .
 
 RUN rm -rf node_modules && npm i && npm link kong-pdk
 
@@ -27,4 +28,6 @@ WORKDIR /kong-python-pdk
 
 COPY ./kong-python-pdk .
 
-RUN pip3 install kong-pdk
+#RUN PYTHONWARNINGS=ignore pip3 install kong-pdk
+
+USER kong

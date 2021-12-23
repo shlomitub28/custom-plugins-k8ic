@@ -35,8 +35,8 @@ env:
 
   pluginserver_names: js,python,go-hello
   pluginserver_js_socket: /usr/local/kong/js_pluginserver.sock
-  pluginserver_js_start_cmd: /kong-js-pdk/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk/plugins
-  pluginserver_js_query_cmd: /kong-js-pdk/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk/plugins --dump-all-plugins
+  pluginserver_js_start_cmd: /usr/local/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk
+  pluginserver_js_query_cmd: /usr/local/bin/kong-js-pluginserver --plugins-directory /kong-js-pdk --dump-all-plugins
 
   pluginserver_python_socket: /usr/local/kong/python_pluginserver.sock
   pluginserver_python_start_cmd: /kong-python-pdk/kong-pluginserver --plugins-directory /kong-python-pdk/plugins

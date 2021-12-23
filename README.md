@@ -10,9 +10,9 @@ Init repo for setting up custom plugins in Javascript, Go and Python.
 helm repo add kong https://charts.konghq.com
 helm repo update
 ```
-- Pull kong/kong-gateway:2.5.1.0-alpine docker image
+- Pull kong/kong-gateway:2.7.0.0-alpine docker image
 ```
-docker pull kong/kong-gateway:2.5.1.0-alpine
+docker pull kong/kong-gateway:2.7.0.0-alpine
 ```
 - Run docker build from project root with name as kong/sales-engineering:custom-kong-1.0 (note the trailing .)
 ```
