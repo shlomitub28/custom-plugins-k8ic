@@ -28,6 +28,4 @@ WORKDIR /kong-python-pdk
 
 COPY ./kong-python-pdk .
 
-#RUN PYTHONWARNINGS=ignore pip3 install kong-pdk
-
 USER kong
